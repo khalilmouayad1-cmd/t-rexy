@@ -1,0 +1,6 @@
+{
+  "name": "T-Rexy by MIGO-kh",
+  "description": "Smart productivity platform with integrated T-Rex AI assistant, habit tracking, goal setting, and productivity analytics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

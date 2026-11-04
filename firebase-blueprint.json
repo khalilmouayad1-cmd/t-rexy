@@ -1,0 +1,24 @@
+{
+  "entities": {
+    "Task": {
+      "title": "Task",
+      "description": "A productivity task.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string", "minLength": 1 },
+        "description": { "type": "string" },
+        "priority": { "type": "string", "enum": ["high", "medium", "low"] },
+        "completed": { "type": "boolean" },
+        "userId": { "type": "string" }
+      },
+      "required": ["id", "title", "userId"]
+    }
+  },
+  "firestore": {
+    "users/{userId}/tasks/{taskId}": {
+      "schema": "Task",
+      "description": "User tasks collection."
+    }
+  }
+}
